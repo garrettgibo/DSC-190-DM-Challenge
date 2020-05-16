@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+pytest = "*"
+
+[packages]
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+sklearn = "*"
+tqdm = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+format = "black ."
+checks = "flake8"
+tests = "pytest tests"
+main = "python main.py"
